@@ -86,10 +86,8 @@ public:
                 for (int i = 0; i < N; i++) {
                     clipLine(pointAtCubic(points[0], points[1], points[2], points[3], dt * i), 
                         pointAtCubic(points[0], points[1], points[2], points[3], dt * (i + 1)), bound, edges);
-                    // std::cout << "@@" << std::endl;
                 }
             } else if (verb == GPath::Verb::kDone) {
-                // std::cout << "jump out?" << std::endl;
                 break;
             }
             
